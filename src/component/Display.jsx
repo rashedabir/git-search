@@ -11,7 +11,7 @@ function Display({ data, repositories }) {
             " "
           ) : (
             <img
-              style={{ height: "100%", width: "100%" }}
+              style={{ height: "91%", width: "100%" }}
               src={data.avatar_url}
               alt={data.avatar_url}
             />

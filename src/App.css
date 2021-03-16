@@ -107,6 +107,8 @@ a{
   border: 1px solid #6666;
   background: rgba(219, 219, 219, 0.4);
   padding: 10px;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
