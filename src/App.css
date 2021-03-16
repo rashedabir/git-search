@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form{
+  border: 1px solid #6666;
+  margin-bottom: 30px;
+  background: rgba(219, 219, 219, 0.4);
+  border-radius: 5px;
+}
+.search-form h2{
+  margin-top: 15px;
+}
+.search-form form{
+  padding: 20px;
+}
+.search input{
+  width: 100%;
+}
+
+.git-search{
+  flex-wrap: wrap;
+}
+
+.search{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.table{
+  width: 1300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+}
+.display-profile{
+  display: flex;
+  margin: 20px auto;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+.git-image{
+  border: 1px solid #6666;
+}
+.git-info{
+  border: 1px solid #6666;
+}
+.name{
+  background-color: #198754;
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+}
+.bio{
+  display: flex;
+  border: 1px solid #6666;
+  padding: 5px;
+  margin: 1px auto;
+  margin-right: 1px;
+}
+.bio h4{
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: 5px;
+}
+.follower{
+  display: flex;
+}
+.follow1{
+  width: 50%;
+}
+.follow2{
+  width: 50%;
+}
+.repo-head{
+  background: #198754;
+  height: 100%;
+  padding: 4px;
+  margin-bottom: 20px;
+  color: white;
+}
+.repo-info{
+  border: 1px solid #6666;
+  background: rgba(219, 219, 219, 0.4);
+  padding: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .display-profile{
+    display: flex;
+    flex-direction: column;
+  }
+  .git-image{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .git-info{
+    width: 100%;
+  }
+}
