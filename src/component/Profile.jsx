@@ -11,7 +11,6 @@ function Profile() {
 
     const profile = await fetch(`https://api.github.com/users/${username}`);
     const profileJson = await profile.json();
-    console.log(profileJson);
     const repo = await fetch(profileJson.repos_url);
     const repoJson = await repo.json();
 
@@ -25,7 +24,7 @@ function Profile() {
     <div className="container git-search">
       <div className="search-form">
         <h2>Enter a Github Username</h2>
-        <form className="search">
+        <form onSubmit={submitHandler} className="search">
           <input
             className="form-control me-2"
             type="search"
@@ -39,7 +38,6 @@ function Profile() {
           <button
             className="btn btn-success d-flex"
             type="submit"
-            onClick={submitHandler}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
