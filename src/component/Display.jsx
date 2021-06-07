@@ -81,7 +81,7 @@ function Display({ data, repositories }) {
               style={{ width: "100%" }}
               onClick={() => setShow(!show)}
             >
-              Show Repositories
+              {show ? "Close" : "Show"} Repositories
             </button>
           </div>
         </div>
